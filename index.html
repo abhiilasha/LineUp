@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<!-- insert date and day here -->
+
+<ul class="navigation">
+    <li  class="navitems"><a href="#">Home</a></li>
+    <li class="navitems"><a href="#">About</a></li>
+    <li class="navitems"><a href="#">Contact</a></li>
+
+</ul>
+    <!-- <div class="title">TO DO LIST</div>  -->
+
+
+ <div class="container">
+
+<div class="listpart">
+    <h2 class="list-title">LISTS</h2>
+    <ul class="listoflists">
+        <li class="listitem active-list">Work</li>
+        <li class="listitem">Shopping</li>
+        <li class="listitem">Read</li>       
+    </ul>
+<form action="">
+    <input type="text" class="add" 
+    placeholder="add a new list"
+
+    />
+
+    <button class="plusbtn" >+</button>
+
+</form>
+</div>
+
+
+<div class="taskpart">
+
+    <div class="header">
+        <h2 class="taskstitle">Work</h2>
+        <p class="taskrem">2 tasks remain</p>
+
+    </div>
+
+    <div class="todotasks">
+        <div class="tasks">
+
+
+            <!-- TASK1 -->
+            <div class="task">
+                <input type="checkbox"  class="checkbox" id="task1">
+                <label for="task1">
+                    <span class="customcheckbox"></span>
+                    Task 1
+                    
+                </label>
+                
+            </div>
+<!-- TASK2 -->
+            
+                <div class="task">
+                    <input type="checkbox"  class="checkbox" id="task2">
+                    <label for="task2">
+                        <span class="customcheckbox"></span>
+                        Task 2
+                        
+                    </label>
+                    
+                </div>
+<!-- TASK3 -->
+              
+                    <div class="task">
+                        <input type="checkbox" class="checkbox"  id="task3">
+                        <label for="task3">
+                            
+                            <span class="customcheckbox"></span>
+                            Task 3
+                            
+                        </label>
+                        
+                    </div>
+        </div>
+        <div class="createnewtask">
+
+            <form action="">
+                <input type="text" class="add"  id="addtask"
+                placeholder="add a new task"
+            
+                />
+            
+                <button class="plusbtn" >+</button>
+            
+            </form>
+        </div>
+
+
+        <div class="delete">
+
+            <button class="deletebutton">Delete list</button>
+            <!-- <button></button> -->
+        </div>
+    </div>
+</div>
+
+<div class="extra">
+
+</div>
+</div> 
+</body>
+</html>
