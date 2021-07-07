@@ -24,13 +24,14 @@
 
 <div class="listpart">
     <h2 class="list-title">LISTS</h2>
-    <ul class="listoflists">
-        <li class="listitem active-list">Work</li>
+    <ul class="listoflists" data-lists>
+        <!-- <li class="listitem active-list">Work</li>
         <li class="listitem">Shopping</li>
-        <li class="listitem">Read</li>       
+        <li class="listitem">Read</li>        -->
     </ul>
-<form action="">
+<form action="" data-new-list-form>
     <input type="text" class="add" 
+    data-new-list-input
     placeholder="add a new list"
 
     />
@@ -41,18 +42,18 @@
 </div>
 
 
-<div class="taskpart">
+<div class="taskpart" data-list-display-container>
 
     <div class="header">
-        <h2 class="taskstitle">Work</h2>
-        <p class="taskrem">2 tasks remain</p>
+        <h2 class="taskstitle" data-list-title >Work</h2>
+        <p class="taskrem" data-list-count>
+            <!-- 2 tasks remain -->
+        </p>
 
     </div>
 
     <div class="todotasks">
-        <div class="tasks">
-
-
+        <div class="tasks" data-tasks>
             <!-- TASK1 -->
             <div class="task">
                 <input type="checkbox"  class="checkbox" id="task1">
@@ -76,25 +77,16 @@
                 </div>
 <!-- TASK3 -->
               
-                    <div class="task">
-                        <input type="checkbox" class="checkbox"  id="task3">
-                        <label for="task3">
-                            
-                            <span class="customcheckbox"></span>
-                            Task 3
-                            
-                        </label>
-                        
-                    </div>
+                
         </div>
         <div class="createnewtask">
 
-            <form action="">
-                <input type="text" class="add"  id="addtask"
+            <form action="" data-new-task-form>
+                <input type="text" 
+                data-new-task-input
+                class="add"  id="addtask"
                 placeholder="add a new task"
-            
-                />
-            
+                />         
                 <button class="plusbtn" >+</button>
             
             </form>
@@ -103,7 +95,7 @@
 
         <div class="delete">
 
-            <button class="deletebutton">Delete list</button>
+            <button class="deletebutton" data-delete-list-button>Delete list</button>
             <!-- <button></button> -->
         </div>
     </div>
@@ -112,6 +104,18 @@
 <div class="extra">
 
 </div>
+
 </div> 
+<template id="task-template">
+    <div class="task">
+        <input type="checkbox" class="checkbox"  >
+        <label >
+            
+            <span class="customcheckbox"></span>
+        </label>
+        
+    </div>
+</template>
+
 </body>
 </html>

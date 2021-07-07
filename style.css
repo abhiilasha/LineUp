@@ -138,7 +138,7 @@ color: rgb(149, 11, 181);
     background-color: rgb(132, 166, 246);
     /* padding:20px; */
     align-self:center;
-    flex-basis: 450px;
+    flex-basis: 550px;
 
 
 }
@@ -155,20 +155,20 @@ color: rgb(149, 11, 181);
 .taskstitle{
     margin:0px;
     /* color: khaki; */
-    font-size: 50px;
+    font-size: 42px;
     padding: 0px;
     padding-bottom: 10px;
 }
 
 .taskrem{
-    padding-left: 10px;
+    padding-left: 8px;
     font-size: 15px;
 }
 
 .todotasks{
 
     padding: 10px;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .checkbox{
@@ -193,7 +193,7 @@ color: rgb(149, 11, 181);
 .task label{
     font-size: 22px;
     display: inline-flex;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     align-items: center;
     position: relative;
     margin:20px;
@@ -221,7 +221,7 @@ opacity:0.5;
     left: 33px;
     right: 0px;
     height: 2px;
-    top:16px;
+    top:11px;
     background-color: rgb(93, 104, 235);
     transform: scaleX(0);
     
